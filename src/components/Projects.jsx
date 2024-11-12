@@ -29,7 +29,9 @@ const Projects = ({ projects, hoveredProject }) => {
             Joaquin Del Vecchio, <span>Full Stack Developer</span>
           </h1>
           <p className="links">
-            <a onClick={togglePopup}>Competitive Edge</a>
+            <a href="#" onClick={togglePopup}>
+              Competitive Edge
+            </a>
 
             <a href="https://www.linkedin.com/in/joaquindelvecchio/">
               LinkedIn
