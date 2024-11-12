@@ -1,6 +1,6 @@
 const Menu = ({ projects, setHoveredProject }) => {
   return (
-    <ul>
+    <ul className>
       {projects.map((project) => (
         <li
           key={project.id}

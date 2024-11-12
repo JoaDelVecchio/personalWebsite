@@ -17,6 +17,16 @@ body {
   height: 100vh;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 950px;
+  height: 80vh;
+}
+
 .app {
   display: flex;
   width: 80%;
@@ -118,6 +128,24 @@ body {
   opacity: 0.85;
 }
 
+.projects-menu li {
+  display: flex;
+  font-size: 1rem;
+
+  color: #4a4a4a;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.projects-menu li:hover {
+  color: #007acc;
+  background-color: rgba(200, 230, 255, 0.2);
+  transform: translateX(8px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .project-info {
   margin-top: 25px;
   padding: 20px;
@@ -147,9 +175,8 @@ body {
   border-radius: 10px;
   margin-top: 15px;
 }
-
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   font-size: 0.9rem;
