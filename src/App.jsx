@@ -67,6 +67,8 @@ function App() {
   ];
 
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const togglePopup = () => setIsPopupOpen(!isPopupOpen);
 
   return (
     <div className="app">
@@ -74,8 +76,32 @@ function App() {
         <Menu projects={projects} setHoveredProject={setHoveredProject} />
       </div>
       <div className="main-content">
-        <Projects projects={projects} hoveredProject={hoveredProject} />
+        <Projects
+          projects={projects}
+          hoveredProject={hoveredProject}
+          togglePopup={togglePopup}
+        />
       </div>
+      {isPopupOpen && (
+        <div className="popup-overlay" onClick={togglePopup}>
+          <div className="popup" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close" onClick={togglePopup}>
+              &times;
+            </button>
+            <h2>Competitive Edge</h2>
+            <p>
+              Through my entrepreneurial journey—ranging from managing a content
+              agency to investing in cryptocurrencies—I’ve developed a unique
+              set of skills that make me a standout in any role. I bring a
+              proactive, adaptable approach to dynamic environments, thriving on
+              solving challenges independently and delivering results under
+              evolving conditions. These experiences have sharpened my ability
+              to understand client needs, manage teams effectively, and drive
+              projects forward with resilience and foresight.
+            </p>
+          </div>
+        </div>
+      )}
       <footer>{formattedDate}</footer>
     </div>
   );

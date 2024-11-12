@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 
-const Projects = ({ projects, hoveredProject }) => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+const Projects = ({ projects, hoveredProject, togglePopup }) => {
   const project = projects.find((p) => p.id === hoveredProject);
-
-  const togglePopup = () => setIsPopupOpen(!isPopupOpen);
 
   return (
     <div className="project-info">
@@ -32,8 +29,11 @@ const Projects = ({ projects, hoveredProject }) => {
             <a href="#" onClick={togglePopup}>
               Competitive Edge
             </a>
-
-            <a href="https://www.linkedin.com/in/joaquindelvecchio/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/joaquindelvecchio/"
+              rel="noopener noreferrer"
+            >
               LinkedIn
             </a>
           </p>
@@ -43,27 +43,6 @@ const Projects = ({ projects, hoveredProject }) => {
             style={{ maxWidth: "100%", borderRadius: "8px" }}
           />
         </>
-      )}
-
-      {isPopupOpen && (
-        <div className="popup">
-          <button className="popup-close" onClick={togglePopup}>
-            &times;
-          </button>
-          <h2>Competitive Edge</h2>
-          <p>
-            Through my entrepreneurial journey—ranging from managing a content
-            agency to investing in cryptocurrencies—I’ve developed a unique set
-            of skills that make me a standout in any role. I bring a proactive,
-            adaptable approach to dynamic environments, thriving on solving
-            challenges independently and delivering results under evolving
-            conditions. These experiences have sharpened my ability to
-            understand client needs, manage teams effectively, and drive
-            projects forward with resilience and foresight. My versatility and
-            readiness to take on new challenges equip me to add meaningful
-            impact and innovation to any project or team.
-          </p>
-        </div>
       )}
     </div>
   );
