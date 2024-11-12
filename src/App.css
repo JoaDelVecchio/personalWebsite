@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,10 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #333;
-  background-color: #f8f8f8;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,17 +22,22 @@ body {
   width: 80%;
   max-width: 950px;
   height: 80vh;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.app:hover {
+  transform: scale(1.02);
 }
 
 .projects-menu {
   flex: 0 0 250px;
-  padding: 20px;
-  background-color: #f3f4f6;
-  border-right: 1px solid #e0e0e0;
+  padding: 25px 20px;
+  background-color: #f7f8fa;
+  border-right: 1px solid #e1e4e8;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -46,77 +53,167 @@ body {
   justify-content: space-between;
   font-size: 1rem;
   padding: 8px 0;
-  color: #555;
+  color: #4a4a4a;
   transition: color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
 }
 
 .projects-menu li:hover {
   color: #007acc;
-  transform: translateX(5px);
+  transform: translateX(8px);
 }
 
 .projects-menu li a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s;
 }
 
 .projects-menu span {
-  color: #bbb;
+  color: #a8a8a8;
+  font-weight: 300;
 }
 
 .main-content {
   flex: 1;
-  padding: 40px;
+  padding: 50px;
   overflow-y: auto;
+  background: #fff;
 }
 
 .main-content h1 {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
 }
 
 .main-content h1 span {
   color: #007acc;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main-content p {
   font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 20px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 .main-content .links {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .main-content .links a {
   text-decoration: none;
   font-size: 1rem;
   color: #007acc;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .main-content .links a:hover {
   color: #005fa3;
+  opacity: 0.85;
 }
 
 .project-info {
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-info:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-name {
+  font-weight: 600;
+}
+
+.project-info img {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+.projects-menu li a:hover {
+  color: #007acc;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Compact Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: popupIn 0.3s ease forwards;
+}
+
+.popup h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #333;
+}
+
+/* Animation */
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
