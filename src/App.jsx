@@ -57,7 +57,7 @@ function App() {
     },
     {
       id: "bank-ops",
-      name: "Bank-Ops",
+      name: "Bank Ops",
       year: "2022",
       link: "https://joadelvecchio.github.io/Bank-Ops/",
       image: "bankops.webp",
