@@ -16,6 +16,8 @@ function App() {
       year: "2024",
       link: "https://fitnessapp-jdv.onrender.com/",
       image: "fitnessapp.png",
+      description:
+        "Fitness Tracker App A sleek, full-stack web app for organizing and tracking workout routines. Built with React and Node.js, it features a luxury-inspired, responsive design and a RESTful API for real-time updates. Perfect for fitness enthusiasts looking to elevate their exercise planning experience.",
     },
     {
       id: "phonebook",
@@ -23,6 +25,8 @@ function App() {
       year: "2024",
       link: "https://thephonebook-s42a.onrender.com/",
       image: "thephonebook.png",
+      description:
+        "The Phonebook Application is a web application designed with react, node js, RestApi, etc to manage a list of contacts efficiently. Users can add, update, and delete contacts, as well as search for specific contacts by name.",
     },
     {
       id: "to-do-list",
@@ -30,6 +34,8 @@ function App() {
       year: "2024",
       link: "https://onamission.netlify.app/",
       image: "todolist.png",
+      description:
+        "Welcome to the Momentum To-Do List App — a sleek, minimalist task management tool inspired by the aesthetics and values of the Momentum clothing brand. This app allows users to add, edit, and delete tasks effortlessly, all while maintaining the clean, monochromatic style that Momentum is known for.",
     },
     {
       id: "country-finder",
@@ -37,6 +43,8 @@ function App() {
       year: "2024",
       link: "https://countryfinderpremium.netlify.app",
       image: "countryfinder.png",
+      description:
+        "Country Finder with Real-Time Weather is a sleek React application that allows users to search for countries and instantly view key details like population, languages, and flags. Built with modern technologies like React, Axios, and Vite, the app delivers fast and efficient performance.",
     },
     {
       id: "macos-calculator",
@@ -44,6 +52,8 @@ function App() {
       year: "2024",
       link: "https://joadelvecchio.github.io/MacOS-Inspired-Calculator/",
       image: "calc.png",
+      description:
+        "This project is a web-based calculator inspired by the MacOS built-in calculator. It replicates the look and feel of the MacOS calculator using modern web technologies.",
     },
     {
       id: "bank-ops",
@@ -51,6 +61,8 @@ function App() {
       year: "2022",
       link: "https://joadelvecchio.github.io/Bank-Ops/",
       image: "bankops.png",
+      description:
+        'This application simulates money transfers between accounts and loan requests, among other things. To use it, various predefined users were created with whom you can log in, transfer money, request loans, or delete their accounts. Joaquin Del Vecchio user:"jdv" PIN:1111, Nicolas Gonzalez user:"ng" PIN:2222 and Juan Perez user:"jp" PIN:3333',
     },
   ];
 
