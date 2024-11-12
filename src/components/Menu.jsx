@@ -1,20 +1,19 @@
 const Menu = ({ projects, setHoveredProject }) => {
   return (
-    <div>
-      <ul className="projects-menu">
-        {projects.map((project, index) => (
-          <li
-            key={index}
-            onMouseEnter={() => setHoveredProject(project.id)}
-            onMouseLeave={() => setHoveredProject(null)}
-          >
-            <a href={project.link} target="_blank">
-              {project.name}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul>
+      {projects.map((project) => (
+        <li
+          key={project.id}
+          onMouseEnter={() => setHoveredProject(project.id)}
+          onMouseLeave={() => setHoveredProject(null)}
+        >
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {project.name}
+          </a>
+          <span>{project.year}</span>
+        </li>
+      ))}
+    </ul>
   );
 };
 
