@@ -18,7 +18,14 @@ const Projects = ({ projects, hoveredProject, togglePopup }) => {
               borderRadius: "8px",
             }}
           />
-          <p>{project.description}</p>
+          <p className="project-desc">{project.description}</p>
+          <ul className="technologies">
+            {project.technologies.map((tech, i) => (
+              <li className="tech-tag" key={i}>
+                {tech}
+              </li>
+            ))}
+          </ul>
         </>
       ) : (
         <>
@@ -35,6 +42,13 @@ const Projects = ({ projects, hoveredProject, togglePopup }) => {
               rel="noopener noreferrer"
             >
               LinkedIn
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/JoaDelVecchio"
+              rel="noopener noreferrer"
+            >
+              GitHub
             </a>
           </p>
           <img

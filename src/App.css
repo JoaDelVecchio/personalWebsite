@@ -100,7 +100,7 @@ body {
 }
 
 .main-content h1 span {
-  color: #007acc;
+  color: rgba(0, 122, 204, 0.7); /* 70% opacity */
   font-weight: 600;
 }
 
@@ -119,12 +119,12 @@ body {
 .main-content .links a {
   text-decoration: none;
   font-size: 1rem;
-  color: #007acc;
+  color: rgba(0, 122, 204, 0.7); /* 70% opacity */
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .main-content .links a:hover {
-  color: #005fa3;
+  color: rgba(0, 122, 204, 0.7); /* 70% opacity */
   opacity: 0.85;
 }
 
@@ -140,14 +140,13 @@ body {
 }
 
 .projects-menu li:hover {
-  color: #007acc;
+  color: rgba(0, 122, 204, 0.7); /* 70% opacity */
   background-color: rgba(200, 230, 255, 0.2);
   transform: translateX(8px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-info {
-  margin-top: 25px;
   padding: 20px;
   background-color: #fafafa;
   border-radius: 12px;
@@ -175,6 +174,10 @@ body {
   border-radius: 10px;
   margin-top: 15px;
 }
+
+.project-info .project-desc {
+  font-size: 0.9rem;
+}
 footer {
   position: absolute;
   bottom: 20px;
@@ -184,7 +187,7 @@ footer {
 }
 
 .projects-menu li a:hover {
-  color: #007acc;
+  color: rgba(0, 122, 204, 0.7); /* 70% opacity */
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -232,6 +235,24 @@ footer {
   color: #333;
 }
 
+.technologies {
+  display: flex;
+}
+
+.tech-tag {
+  background-color: rgba(0, 122, 204, 0.7); /* 70% opacity */
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.project-desc {
+  font-size: 15px;
+}
 /* Animation */
 @keyframes popupIn {
   from {
