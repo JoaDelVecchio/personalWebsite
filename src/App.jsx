@@ -11,6 +11,22 @@ function App() {
 
   const projects = [
     {
+      id: "startups-blog",
+      name: "StartIt (In Progress)",
+      year: "2024",
+      link: "http://localhost:3000/",
+      image: "startupblogs.png",
+      description:
+        "Startups Blog is a NextJS web platform designed for sharing and exploring inspiring startup stories. Built with Next.js and TypeScript, it offers users the ability to browse, search, and add new startup success stories. With a clean, minimalist design and dynamic rendering, it ensures a seamless user experience.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "Node.js",
+        "REST API",
+      ],
+    },
+    {
       id: "fitness-app",
       name: "Fitness App",
       year: "2024",
