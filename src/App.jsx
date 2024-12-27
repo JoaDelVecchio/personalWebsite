@@ -146,15 +146,14 @@ function App() {
               </button>
               <h2>Competitive Edge</h2>
               <p>
-                Through my entrepreneurial journey—ranging from managing a
-                content agency to investing in cryptocurrencies—I’ve developed a
-                unique set of skills that make me a standout in any role. I
-                bring a proactive, adaptable approach to dynamic environments,
-                thriving on solving challenges independently and delivering
-                results under evolving conditions. These experiences have
-                sharpened my ability to understand client needs, manage teams
-                effectively, and drive projects forward with resilience and
-                foresight.
+                In addition to my programming experience, I managed a marketing
+                team (including setters, video editors, and content creators)
+                and have invested and traded in stocks and cryptocurrencies.
+                These experiences taught me resilience, adaptability, and strong
+                communication skills—qualities I bring to any dynamic team. My
+                native language is Spanish, and I have a B2 level in English
+                (Cambridge First Certificate), enabling me to collaborate
+                seamlessly in multicultural teams.
               </p>
             </div>
           </div>
