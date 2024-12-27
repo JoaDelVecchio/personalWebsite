@@ -11,6 +11,23 @@ function App() {
 
   const projects = [
     {
+      id: "Jym",
+      name: "Jym",
+      year: "2024",
+      link: "https://gym-app-tau-swart.vercel.app/",
+      image: "Jym.png",
+      description:
+        "Jym is a React-based web application that showcases a fitness platform with OAuth, dynamic carousels, informative sections, a form to submit inquires and a user-friendly design. Featuring components like class details, benefits, and a contact form, it provides a modern interface to engage fitness enthusiasts.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "GoogleOAuth",
+        "Vercel",
+      ],
+    },
+
+    {
       id: "startups-blog",
       name: "StartIt (In Progress)",
       year: "2024",
