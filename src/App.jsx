@@ -31,7 +31,7 @@ function App() {
       name: "Money Tracker",
       year: "2024",
       link: "https://expense-tracker-f8hsxyrpd-joadelvecchios-projects.vercel.app/",
-      image: "money-tracker.png", // Replace with the actual image file name
+      image: "money-tracker.png",
       description:
         "Expense Tracker is a React-based web application that allows users to track their income and expenses efficiently. With features like adding new transactions, viewing transaction history, and a real-time balance update, it provides an intuitive and clean interface for managing personal finances.",
       technologies: [
