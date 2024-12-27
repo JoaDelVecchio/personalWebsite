@@ -12,7 +12,7 @@ function App() {
   const projects = [
     {
       id: "Jym",
-      name: "Jym (My Most Recent Work)",
+      name: "Jym (Most Recent)",
       year: "2024",
       link: "https://gym-app-tau-swart.vercel.app/",
       image: "Jym.png",
