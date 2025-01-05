@@ -39,7 +39,7 @@ function App() {
 
     {
       id: "startups-blog",
-      name: "StartIt (In Progress)",
+      name: "StartIt (Trying Nextjs)",
       year: "2024",
       link: "https://start-it-six.vercel.app/",
       image: "startupblogs.png",
