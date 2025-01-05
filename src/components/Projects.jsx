@@ -51,11 +51,17 @@ const Projects = ({ projects, hoveredProject, togglePopup }) => {
               GitHub
             </a>
           </p>
-          <img
-            src="me.webp"
-            alt=""
-            style={{ maxWidth: "100%", borderRadius: "8px" }}
-          />
+          <div className="project-info">
+            <p style={{ fontSize: 14 }}>
+              Hi, I’m a Computer Engineering student with two years of
+              experience as a Software Developer. I’m available to join
+              immediately and ready to quickly adapt to any team’s needs.
+            </p>
+            <p style={{ fontSize: 14 }}>
+              <strong>Technical Skills:</strong> ReactJS, JavaScript,
+              TypeScript, Node.js/Express, Databases, HTML5, CSS3, Python, Git.
+            </p>
+          </div>
         </>
       )}
     </div>
