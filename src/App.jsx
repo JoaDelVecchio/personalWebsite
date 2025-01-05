@@ -12,8 +12,8 @@ function App() {
   const projects = [
     {
       id: "Jym",
-      name: "Jym (Most Recent)",
-      year: "2024",
+      name: "Jym",
+      year: "2025",
       link: "https://gym-app-tau-swart.vercel.app/",
       image: "Jym.png",
       description:
@@ -25,6 +25,16 @@ function App() {
         "GoogleOAuth",
         "Vercel",
       ],
+    },
+    {
+      id: "Muvi",
+      name: "Muvi",
+      year: "2025",
+      link: "https://muvi-8coy0w035-joadelvecchios-projects.vercel.app/",
+      image: "muvi.png",
+      description:
+        "Muvi is a React-based web application for discovering, searching, and managing favorite movies. It features dynamic search, stateful favorites management, and integration with the TMDb API, all within a clean and responsive design. The app is perfect for showcasing movie data in an engaging and modern way.",
+      technologies: ["React", "TypeScript", "Tailwind", "API", "Vercel"],
     },
 
     {
