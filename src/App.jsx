@@ -11,7 +11,7 @@ function App() {
 
   const projects = [
     {
-      id: "ProteinPlates",
+      id: "ProteinPlates (In Progress)",
       name: "ProteinPlates",
       year: "2025",
       link: "https://proteinplates-sigma.vercel.app/",
