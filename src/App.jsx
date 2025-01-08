@@ -11,6 +11,16 @@ function App() {
 
   const projects = [
     {
+      id: "ProteinPlates",
+      name: "ProteinPlates",
+      year: "2025",
+      link: "https://proteinplates-sigma.vercel.app/",
+      image: "proteinplates.png",
+      description:
+        "ProteinPlates is a React-based web application focused on fitness enthusiasts who seek high-protein meal recipes. It features a dynamic search bar, interactive navigation, and an intuitive design to help users discover recipes tailored to their fitness goals. With components for meal customization, nutritional insights, and user-friendly browsing, it promotes discipline, success, and the dream lifestyle.",
+      technologies: ["React", "TypeScript", "TailwindCSS", "Vercel"],
+    },
+    {
       id: "Jym",
       name: "Jym",
       year: "2025",
