@@ -11,6 +11,16 @@ function App() {
 
   const projects = [
     {
+      id: "CountryInfo",
+      name: "CountryInfo",
+      year: "2025",
+      link: "https://the-country-info-app-iota.vercel.app/",
+      image: "countryinfo.png",
+      description:
+        "CountryInfo is a sleek and user-friendly web application that allows users to explore countries from around the world. It provides detailed information on population, languages, flags, and more, with an intuitive design and smooth navigation.",
+      technologies: ["React", "Node.js/Express", "TailwindCSS", "Typescript"],
+    },
+    {
       id: "ProteinPlates (In Progress)",
       name: "ProteinPlates",
       year: "2025",
