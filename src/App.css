@@ -237,6 +237,10 @@ footer {
 
 .technologies {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 380px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-tag {

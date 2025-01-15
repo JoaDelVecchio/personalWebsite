@@ -19,10 +19,11 @@ function App() {
       description:
         "Momentum is a modern and minimalist task management web application designed to boost productivity. With an elegant design and seamless user experience, it allows users to organize daily tasks, track progress, and achieve their goals effectively.",
       technologies: [
-        "React/Typescript",
+        "React",
         "Node.js/Express",
         "Supabase (PostgreSQL)",
         "TailwindCSS",
+        "Typescript",
       ],
     },
     {
