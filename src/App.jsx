@@ -11,6 +11,22 @@ function App() {
 
   const projects = [
     {
+      id: "Momentum",
+      name: "Momentum",
+      year: "2025",
+      link: "https://momentum-ebon.vercel.app/",
+      image: "momentum.png",
+      description:
+        "Momentum is a modern and minimalist task management web application designed to boost productivity. With an elegant design and seamless user experience, it allows users to organize daily tasks, track progress, and achieve their goals effectively.",
+      technologies: [
+        "React",
+        "Node.js/Express",
+        "Supabase (PostgreSQL)",
+        "TailwindCSS",
+        "Typescript",
+      ],
+    },
+    {
       id: "CountryInfo",
       name: "CountryInfo",
       year: "2025",
