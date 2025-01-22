@@ -11,6 +11,22 @@ function App() {
 
   const projects = [
     {
+      id: "KeyPlace",
+      name: "KeyPlace: In Progress",
+      year: "2025",
+      link: "https://key-place.vercel.app/",
+      image: "keyplace.png",
+      description:
+        "KeyPlace is a sleek and modern real estate web application designed to simplify the process of finding and managing properties. With a user-friendly interface and robust features, it helps users explore listings, manage their profiles, and achieve their real estate goals effortlessly.",
+      technologies: [
+        "React",
+        "Node.js/Express",
+        "MongoDB",
+        "TailwindCSS",
+        "Typescript",
+      ],
+    },
+    {
       id: "Momentum",
       name: "Momentum",
       year: "2025",
