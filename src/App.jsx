@@ -11,8 +11,24 @@ function App() {
 
   const projects = [
     {
+      id: "247Pilars:In Progress",
+      name: "247Pilars: The Discipline Tracker",
+      year: "2025",
+      link: "https://247-pilars.vercel.app/",
+      image: "247pilars.png",
+      description:
+        "247Pilars is a sleek and minimalistic to-do and habit-tracking app designed for those who embrace the grind. Inspired by the 247 lifestyle, it helps users stay disciplined, track progress, and execute their daily goals with precision.",
+      technologies: [
+        "React",
+        "Node.js/Express",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+      ],
+    },    
+    {
       id: "KeyPlace",
-      name: "KeyPlace: In Progress",
+      name: "KeyPlace:In Progress",
       year: "2025",
       link: "https://key-place.vercel.app/",
       image: "keyplace.png",
