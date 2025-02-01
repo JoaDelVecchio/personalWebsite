@@ -11,6 +11,22 @@ function App() {
 
   const projects = [
     {
+      id: "Top3",
+      name: "Top3",
+      year: "2025",
+      link: "https://top3-gamma.vercel.app/",
+      image: "top3.png",
+      description:
+        "Top3 is a high-performance productivity tool. Designed for individuals who prioritize work, relationships and fitness, Top3 helps users manage their top daily priorities, and stay on top of their goals with a clean and minimalistic interface.",
+      technologies: [
+        "React",
+        "Node/ExpressJs",
+        "MongoDB",
+        "TailwindCSS",
+        "TypeScript",
+      ],
+    },    
+    {
       id: "247Pilars",
       name: "247Pilars:In Progress",
       year: "2025",
